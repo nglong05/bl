@@ -50,7 +50,7 @@ java -jar target/ysoserial-0.0.6-SNAPSHOT-all.jar CommonsCollections1 "touch /tm
 
 Mình đã xây dựng một lab để thử nghiệm những chain sử dụng Common Collections. Ở đây mình thêm phiên bản thấp của nó để có thể hoạt động (version 3.2.1).
 
-Source code của lab: http://link.com
+Source code của lab: https://github.com/nglong05/vulnerable_labs/tree/main/deser_java_lab_2
 
 Sink của lab nằm ở `/deserialize`
 
