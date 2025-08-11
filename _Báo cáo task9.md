@@ -29,7 +29,7 @@ Nói một cách dễ hiểu, `create()` cung cấp dev một cách nhanh gọn 
 
 [Difference between User.objects.create_user() vs User.objects.create() vs User().save() in django - Stack Overflow](https://stackoverflow.com/questions/63054997/difference-between-user-objects-create-user-vs-user-objects-create-vs-user)
 
- Tại bài viết Stack Overflow này đã cho ta thấy một ví dụ sử dụng `create_user()`, mật khẩu ở đây đã được tự động hash sử dụng PBKDF2 và SHA-256, tuy nhiên `create()` lưu trữ dữ liệu ở dạng plain text. Điều này hợp lý với việc ta thấy password không được hash khi kiểm tra db.sqlite3 ở trên. Để rõ hơn về vấn đề này, mình đã thử debug xem create hoạt động ra sao [tại đây](nglong05.github.io/bl/#_chain_create.png), ta dễ thấy django đơn giản chỉ thực hiện câu lệnh INSERT.
+ Tại bài viết Stack Overflow này đã cho ta thấy một ví dụ sử dụng `create_user()`, mật khẩu ở đây đã được tự động hash sử dụng PBKDF2 và SHA-256, tuy nhiên `create()` lưu trữ dữ liệu ở dạng plain text. Điều này hợp lý với việc ta thấy password không được hash khi kiểm tra db.sqlite3 ở trên. Để rõ hơn về vấn đề này, mình đã thử debug xem create hoạt động ra sao [tại đây](#_chain_create.png), ta dễ thấy django đơn giản chỉ thực hiện câu lệnh INSERT.
 
 Như vậy là ta đã lý giải được tại sao mật khẩu lại là plaintext và cách user đăng ký, tiếp tục phân tích các hoạt động khác của user: ta nhận thấy rằng khi user thực hiện login hoặc thực hiện hành động search trong homepage đều sử dụng:
 
