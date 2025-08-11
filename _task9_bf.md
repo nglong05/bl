@@ -1,3 +1,4 @@
+```python
 import requests
 import string
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -39,3 +40,4 @@ while True:
 
     if not found_char:
         break
+```
