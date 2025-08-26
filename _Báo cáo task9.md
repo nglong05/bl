@@ -97,3 +97,6 @@ Sau khi nhận được fake flag, ta kiểm tra xem Docker file có cấu hình
 - không có cronjobs, không có SUID có thể khai thác, không thể dùng sudo
 
 - research google: `5.15.0-119-generic privilege escalation exploit site:exploit-db.com` trả về DirtyPipe (CVE-2022-0847) nhưng thử nghiêm trên server thất bại do môi trường Docker
+
+
+

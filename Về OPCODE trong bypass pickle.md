@@ -4,7 +4,7 @@
 
 [Insecure Deserialization in Python](https://tontac.team/insecure-deserialization-in-python/)
 
-Tại bài viết này, tác giả đã nói về những lý thuyết cơ bản của Object Serialization trong python. Tác giả đã nhận xét:
+Tại bài viết này, tác giả đã nói về những lý thuyết cơ bản của Object Serialization trong python. Tác giả đã nhận xét: 
 
 ![](images/bypass_pickle_image1.png)
 
